@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>pbpmanager</class>
+ <widget class="QMainWindow" name="pbpmanager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>265</width>
+    <height>375</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>265</width>
+    <height>375</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>pbpmanager</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>WAD File Location:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_2"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Comp Level:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string comment="Use PrBoom's current release settings" extracomment="-complevel 17">Current PrBoom</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="Emulates PrBoom v2.4.0" extracomment="-complevel 16">PrBoom v2.4.0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="Emulates PrBoom v2.3.x" extracomment="-complevel 15">PrBoom v2.3.x</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="Emulates PrBoom v2.1.1-2.2.6 " extracomment="-complevel 14">PrBoom v2.1.1-2.2.6</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="Emulates PrBoom v2.1.0" extracomment="-complevel 13">PrBoom v2.1.0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="Emulates PrBoom v2.03beta" extracomment="-complevel 12">PrBoom Beta</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="Emulates MBF" extracomment="-complevel 11">Marine's Best Friend</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="Emulates LxDoom v1.4.x" extracomment="-complevel 10">LxDoom</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="Emulates Boom v2.02" extracomment="-complevel 9">Boom v2.02</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="Emulates Boom v2.01" extracomment="-complevel 8">Boom v2.01</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="Emulates Boom's compatibility mode" extracomment="-complevel 7">Boom</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="Emulate early dosdoom versions&#13;(some TASdoom demos work with this)" extracomment="-complevel 5">Dos Doom</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="Compatible with Final Doom &amp; Doom95 - needed&#13; &#9;&#9;&#9;&#9;for some demos recorded with Final Doom doom2.exe" extracomment="-complevel 4">Final Doom</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="Ultimate Doom made a few changes" extracomment="-complevel 3">ULTDoom</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="As compatible as possible for playing Doom demos" extracomment="-complevel 2">Original Demo compat</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="Behave like Doom v1.666 as far as possible" extracomment="-complevel 1">Doom 1.666</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="Emulate Doom v1.2 game details where possible" extracomment="-complevel 0">Doom 1.2</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Difficulty:     </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="currentIndex">
+         <number>2</number>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
+        </property>
+        <item>
+         <property name="text">
+          <string comment="Baby mode">I'm Too Young to Die!</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="Easy">Hey, Not Too Rough</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="Normal">Hurt Me Plenty</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="Hard">Ultra-Violent</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="Massochistic">NIGHTMARE!</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QCheckBox" name="checkBox">
+        <property name="text">
+         <string>Respawning Monsters</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_2">
+        <property name="text">
+         <string>Fast Monsters</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_3">
+        <property name="text">
+         <string>No Monsters</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_4">
+        <property name="text">
+         <string>No Cheats</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Load Level:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="spinBox_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>32</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QPushButton" name="launchButton">
+        <property name="text">
+         <string>Launch</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="scriptButton">
+        <property name="text">
+         <string>Make Script</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actiongithub">
+   <property name="text">
+    <string>github</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
