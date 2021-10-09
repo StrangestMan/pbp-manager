@@ -34,7 +34,7 @@ Remember: `Launch Script` runs the game, `Make Script` saves your settings to a 
 
 [PrBoom+](https://github.com/coelckers/prboom-plus)
 
-Qmake & Qt headers
+Qmake & Qt headers (qtbase5-dev, qt5-qmake)
 
 A C++ compiler
 
