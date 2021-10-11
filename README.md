@@ -55,7 +55,7 @@ Bash commands:
 ```bash
     git clone https://github.com/StrangestMan/pbp-manager
     cd pbp-manager
-    ./scripts/ubuntu_depinstall.sh
+    chmod +x scripts/ubuntu_depinstall.sh && ./scripts/ubuntu_depinstall.sh
     make
 ```
 
