@@ -1,0 +1,7 @@
+/build/.qmake.stash
+/build/Makefile
+/build/*.o
+/build/*.cpp
+/build/moc_predefs.h
+/build/pbp-manager
+/build/ui_pbpmanager.h

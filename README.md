@@ -57,8 +57,6 @@ Bash commands:
 ```bash
     git clone https://github.com/StrangestMan/pbp-manager
     cd pbp-manager 
-    mkdir build && cd build
-    qmake ..
     make
 ```
 
