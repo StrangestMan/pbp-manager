@@ -46,10 +46,6 @@ First, make sure you have all the dependencies. Then:
 
 1. `cd` into the directory
 
-1. Make a folder called "build" and `cd` into it
-
-1. Generate a makefile with Qmake
-
 1. Run the makefile
 
 Bash commands:
