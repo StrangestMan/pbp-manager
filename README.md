@@ -36,7 +36,7 @@ Remember: `Launch Script` runs the game, `Make Script` saves your settings to a 
 
 Qmake & Qt headers (qtbase5-dev, qt5-qmake)
 
-A C++ compiler
+A C++ compiler (build-essential)
 
 ### Installing
 
@@ -46,13 +46,16 @@ First, make sure you have all the dependencies. Then:
 
 1. `cd` into the directory
 
+1. (Optional) Run the dependency install script
+
 1. Run the makefile
 
 Bash commands:
 
 ```bash
     git clone https://github.com/StrangestMan/pbp-manager
-    cd pbp-manager 
+    cd pbp-manager
+    ./scripts/ubuntu_depinstall.sh
     make
 ```
 
