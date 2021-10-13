@@ -40,4 +40,4 @@ A C++ compiler (build-essential)
 
 ### Installing
 
-Please read [INSTALL.md](https://github.com/StrangestMan/pbp-manager/blob/51fbef3b763029ab3da36c4ac80390624b306474/doc/INSTALL.md) for instructions on installing
+Please read [INSTALL.md](https://github.com/StrangestMan/pbp-manager/blob/main/doc/INSTALL.md) for instructions on installing
