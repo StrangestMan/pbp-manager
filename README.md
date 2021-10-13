@@ -40,23 +40,4 @@ A C++ compiler (build-essential)
 
 ### Installing
 
-First, make sure you have all the dependencies. Then:
-
-1. Clone the repo
-
-1. `cd` into the directory
-
-1. (Optional) Run the dependency install script
-
-1. Run the makefile
-
-Bash commands:
-
-```bash
-    git clone https://github.com/StrangestMan/pbp-manager
-    cd pbp-manager
-    chmod +x scripts/ubuntu_depinstall.sh && ./scripts/ubuntu_depinstall.sh
-    make
-```
-
-I suggest adding both pbp-manager and PrBoom+ to your PATH, but it's not necessary
+Please read [INSTALL.md](https://github.com/StrangestMan/pbp-manager/blob/51fbef3b763029ab3da36c4ac80390624b306474/doc/INSTALL.md) for instructions on installing
