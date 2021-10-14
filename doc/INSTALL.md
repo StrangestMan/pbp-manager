@@ -22,8 +22,8 @@ Assuming all went well, the compiled pbp-manager will sit in the `build` folder.
 
 ## Adding pbp-manager to your PATH
 
-Assuming you're using a Debian/Ubuntu based distro, put: 
+Assuming you're using a Debian/Ubuntu based distro, put:
 
 `PATH=$PATH:/path/to/pbp-manager` into either `~/.bashrc` or `~/.bash_aliases`, depending on your preference
 
-then type `source ~/.bashrc`, which will update your PATH to include pbp-manager
+Then type `source ~/.bashrc`, which will update your PATH to include pbp-manager
