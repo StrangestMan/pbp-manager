@@ -4,25 +4,14 @@
 #include <fstream>
 #include <ctime>
 
-pbpFunctions::pbpFunctions() {
-    // Boolean init
-    fastMonsters = 0, respawningMonsters = 0, noMonsters = 0, noCheats = 0;
-
-    // Integer init
-    save = -1;
-    map = 1;
-    difficulty = 3;
-    compLevel = 17;
-
-    // String init
-    wadLocation = "";
-}
+pbpFunctions::pbpFunctions() : fastMonsters{0}, respawningMonsters{0}, noMonsters{0}, noCheats{0}, save{-1}, difficulty{3}, compLevel{17}, map{0}, wadLocation{""}
+{};
 
 pbpFunctions::~pbpFunctions() {
 
 }
 
-// I'm only doing this for good practice, as I'm not doing any value checks on these variables
+// Only doing this for good practice, no need to sanitize values for booleans
 void pbpFunctions::bFastMonsters(bool inpt) {
     fastMonsters = inpt;
 }
@@ -48,18 +37,19 @@ bool pbpFunctions::bGet_noCheats() {
     return noCheats;
 }
 
+
 void pbpFunctions::iSave(int inpt) {
     save = inpt;
     // Prevent the user from accessing a save file that doesn't exist
     if(save > 7) {
-        save = 0;
+        save = -1;
     }
 }
 void pbpFunctions::iDifficulty(int inpt) {
     difficulty = inpt;
     // Prevent the user from playing on a non-existent difficulty
     if(difficulty > 5) {
-        difficulty = 3;
+        difficulty = 5;
     }
 }
 void pbpFunctions::iCompLevel(int inpt) {
@@ -68,6 +58,8 @@ void pbpFunctions::iCompLevel(int inpt) {
     if(compLevel > 17) {
         compLevel = 17;
     }
+    // This will need to be updated whenever PrBoom+ comes out with a new complevel
+    // Not a big problem now, but a way to automate the current level would be nice
 }
 void pbpFunctions::iMap(int inpt) {
     map = inpt;
@@ -75,26 +67,10 @@ void pbpFunctions::iMap(int inpt) {
     if(map > 32) {
         map = 32;
     }
+    // This might be troublesome for custom maps / wads at a map index above 32
+    // TODO: Look into ^^^
+    
 }
-/*
-
-    As of now, pbp-manager only supports Doom 2's load level (it's easier). I'll probably implement this in the future, but not now
-
-void pbpFunctions::iEpisode(int inpt) {
-    episode = inpt;
-    // Prevent the user from entering a non-existent episode
-    if(episode > 4) {
-        episode = 1;
-    }
-}
-void pbpFunctions::iLevel(int inpt) {
-    level = inpt;
-    // Prevent the user from accessing a non-existent level
-    if(level > 9) {
-        level = 9;
-    }
-}
-*/
 
 int pbpFunctions::iGet_save() {
     return save;
@@ -109,12 +85,17 @@ int pbpFunctions::iGet_map() {
     return map;
 }
 
+
 void pbpFunctions::sWadLocation(std::string inpt) {
     wadLocation = inpt;
+
+    // TODO: Sanatize this input and error out whenever
+    // the input doesn't work with linux filesystems
 }
 std::string pbpFunctions::sGet_wadLocation() {
     return wadLocation;
 }
+
 // End of variable stuff
 
 std::string pbpFunctions::createScript(pbpFunctions& pbp0) {
@@ -168,7 +149,7 @@ int pbpFunctions::makeScript(pbpFunctions& pbp0) {
     std::ofstream outfile;
     outfile.open("pbp-manager.sh");
     if(!outfile) {
-        return 1;
+        return 1; // Something broke and the file can't be opened
     }
     outfile << pbp0.createScript(pbp0);
     outfile.close();

@@ -8,7 +8,7 @@ After using [PrBoom+](https://github.com/coelckers/prboom-plus)'s CLI features f
 
 To use pbp-manager, simply run the compiled program and enter in your desired values:
 
-* Wad File Location: This is the literal path to where-ever your main doom wad is (DOOM.WAD or DOOM2.WAD). This is a required field; leaving it empty will stop Doom from launching
+* Wad File Location: This is the literal path to where-ever your main doom wad is (DOOM.WAD or DOOM2.WAD, etc). This is a required field; leaving it empty will stop Doom from launching
 
 * Comp Level: The compatability level PrBoom+ uses. You should leave this alone if you're unsure about it. Read up on compatability levels [here](https://github.com/coelckers/prboom-plus/blob/master/prboom2/doc/README.compat)
 
