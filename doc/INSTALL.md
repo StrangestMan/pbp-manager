@@ -1,6 +1,6 @@
 # Installation Instructions
 
-1. Get the required dependencies:
+1. Get the required (Debian/Ubuntu) dependencies:
     * build-essential
     * qtbase5-dev
     * qt5-qmake
