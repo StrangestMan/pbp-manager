@@ -6,7 +6,7 @@ After using [PrBoom+](https://github.com/coelckers/prboom-plus)'s CLI features f
 
 ### Usage
 
-Please read [USAGE.md](https://github.com/StrangestMan/pbp-manager/blob/main/doc/INSTALL.md) for info on usage
+Please read [USAGE.md](https://github.com/StrangestMan/pbp-manager/blob/main/doc/USAGE.md) for info on usage
 
 ### Installing
 
