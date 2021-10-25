@@ -39,7 +39,7 @@ bool pbpFunctions::bGet_noCheats() {
 
 
 void pbpFunctions::iSave(int inpt) {
-    save = inpt;
+    save = inpt - 1;
     // Prevent the user from accessing a save file that doesn't exist
     if(save > 7) {
         save = -1;
@@ -111,7 +111,10 @@ std::string pbpFunctions::createScript(pbpFunctions& pbp0) {
         bashCommand << "-loadgame " << pbp0.iGet_save() << " ";
     }
 
-    bashCommand << "-warp " << pbp0.iGet_map() << " ";
+    if(pbp0.iGet_map() != 0) {
+        bashCommand << "-warp " << pbp0.iGet_map() << " ";
+    }
+
     bashCommand << "-skill " << pbp0.iGet_difficulty() << " ";
 
     if(pbp0.bGet_respawningMonsters() == 1) {
